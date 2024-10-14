@@ -1,7 +1,7 @@
 <template>
     <div class="largura-componente">
         <img :src="imagemNoticia" alt="">
-        <small class="mb-3 linha d-block">{{ dataNoticia }}</small>
+        <small class="mb-3 d-block"><i class="far fa-clock"></i> {{ dataNoticia }}</small>
         <h2>{{ tituloNoticia }}</h2>
         <h5 class="text-primary-emphasis">{{ subTituloNoticia }}</h5>
         <p>{{ assuntoNoticia }}</p>
@@ -64,12 +64,6 @@
 
     small {
         font-size: 13px;
-    }
-
-    .linha {
-        border-bottom: 2px solid #0d6efd;
-        padding: 2px;
-        width: 135px;
     }
 
     .largura-componente {

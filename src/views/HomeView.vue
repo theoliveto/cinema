@@ -40,6 +40,7 @@
     </div>
   </div>
   <rodape-component />
+  <cookies-component />
 </template>
 
 <script>
@@ -48,6 +49,7 @@
   import NoticiaHorizontalComponent from '../components/noticias/NoticiaHorizontalComponent.vue'
   import NoticiaVerticalComponent from '../components/noticias/NoticiaVerticalComponent.vue'
   import NoticiaComponent from '../components/noticias/NoticiaComponent.vue'
+  import CookiesComponent from '../components/CookiesComponent.vue'
 
   export default {
     name: 'HomeView',
@@ -56,7 +58,8 @@
       RodapeComponent,
       NoticiaHorizontalComponent,
       NoticiaVerticalComponent,
-      NoticiaComponent
+      NoticiaComponent,
+      CookiesComponent  
     },
     data() {
       return {

@@ -3,7 +3,7 @@
         <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-primary-emphasis">{{ assuntoNoticia }}</strong>
             <h4 class="mb-1">{{ tituloNoticia }}</h4>
-            <small class="mb-4 text-body-secondary">{{ dataNoticia }}</small>
+            <small class="mb-4 text-body-secondary"><i class="far fa-clock"></i> {{ dataNoticia }}</small>
             <p class="card-text mb-auto">{{ resumoNoticia }}</p>
             <div class="row">
                 <div class="col">
