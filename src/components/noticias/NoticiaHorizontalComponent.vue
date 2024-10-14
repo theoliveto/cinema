@@ -7,7 +7,7 @@
             <p class="card-text mb-auto">{{ resumoNoticia }}</p>
             <div class="row">
                 <div class="col">
-                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                    <a :href="linkNoticia" class="icon-link gap-1 icon-link-hover stretched-link" target="_blank">
                         Continue lendo
                         <i class="fa-solid fa-chevron-right"></i>
                     </a>
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="col-auto d-none d-lg-block">
-            <img :src="imagemNoticia" alt="" width="200" height="250">
+            <img :src="imagemNoticia" alt="">
         </div>
     </div>
 </template>
@@ -56,6 +56,10 @@
                 type: String,
                 required: true
             },
+            linkNoticia: {
+                type: String,
+                required: true
+            }
         }
     }
 </script>
@@ -71,5 +75,12 @@
 
     small {
         font-size: 13px;
+    }
+
+    h4 {
+        font-weight: 900;
+        color: #0d6efd;
+        text-align: justify;
+        letter-spacing: -1px;
     }
 </style>
