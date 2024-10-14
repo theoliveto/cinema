@@ -59,14 +59,14 @@
       NoticiaHorizontalComponent,
       NoticiaVerticalComponent,
       NoticiaComponent,
-      CookiesComponent  
+      CookiesComponent
     },
     data() {
       return {
         dataNoticia: new Date().toLocaleString(),
         imagemNoticiaHorizontal: require('../assets/img/img-noticia-horizontal.png'),
         imagemNoticiaVertical: require('../assets/img/img-noticia-vertical.png'),
-        linkAcesso: 'https://www.omelete.com.br/'
+        linkAcesso: '/noticia'
       }
     }
   }
