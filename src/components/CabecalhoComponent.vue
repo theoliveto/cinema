@@ -17,8 +17,8 @@
                 </ul>
 
                 <div class="col-md-3 text-end">
-                    <a href="#" target="_blank" class="btn btn-outline-light btn-entrar me-2">Entrar</a>
-                    <a href="#" target="_blank" class="btn btn-primary text-light">Cadastrar</a>
+                    <a href="/entrar" target="_blank" class="btn btn-outline-light btn-entrar me-2">Entrar</a>
+                    <a href="/cadastrar" target="_blank" class="btn btn-primary text-light">Cadastrar</a>
                 </div>
             </div>
         </div>
