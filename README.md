@@ -27,3 +27,20 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Estrutura de componente básica
+```
+<template>
+    <div></div>
+</template>
+
+<script>
+    export default {
+
+    }
+</script>
+
+<style scoped>
+
+</style>
+```
