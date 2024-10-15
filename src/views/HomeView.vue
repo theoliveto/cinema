@@ -48,9 +48,13 @@
       <div class="col-3">
         <aside-component tituloPrincipal="Notícias Recentes" />
       </div>
+      <div class="col-12">
+        <criticas-component />
+      </div>
     </div>
   </div>
 
+  <carousel-component />
   <div class="container-fluid divisor"></div>
 
   <div class="container-xxl mt-5">
@@ -124,6 +128,8 @@
   import CookiesComponent from '../components/CookiesComponent.vue'
   import AsideComponent from '../components/AsideComponent.vue'
   import DestaquesComponent from '../components/DestaquesComponent.vue' 
+  import CarouselComponent from '../components/CarouselComponent.vue'
+  import CriticasComponent from '../components/CriticasComponent.vue'
 
   export default {
     name: 'HomeView',
@@ -135,7 +141,9 @@
       NoticiaComponent,
       CookiesComponent,
       AsideComponent,
-      DestaquesComponent
+      DestaquesComponent,
+      CarouselComponent,
+      CriticasComponent
     },
     data() {
       return {
