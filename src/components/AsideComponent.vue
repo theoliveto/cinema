@@ -1,6 +1,6 @@
 <template>
     <div class="position-sticky">
-        <h4 class="fst-italic">Notícias Recentes</h4>
+        <h4 class="fst-italic">{{ tituloPrincipal }}</h4>
         <ul class="list-unstyled">
             <li v-for="item in items" :key="item.id">
                 <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
@@ -49,6 +49,12 @@
                     { id: 11, mes: 'Novembro' },
                     { id: 12, mes: 'Dezembro' },
                 ]
+            }
+        },
+        props: {
+            tituloPrincipal: {
+                type: String,
+                require: true
             }
         }
     }

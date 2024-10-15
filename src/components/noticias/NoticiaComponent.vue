@@ -1,6 +1,6 @@
 <template>
-    <div class="largura-componente">
-        <img :src="imagemNoticia" alt="">
+    <div class="largura-componente mb-3">
+        <img :src="imagemNoticia" alt="" class="mb-3">
         <small class="mb-3 d-block"><i class="far fa-clock"></i> {{ dataNoticia }}</small>
         <h2>{{ tituloNoticia }}</h2>
         <h5 class="text-primary-emphasis">{{ subTituloNoticia }}</h5>
