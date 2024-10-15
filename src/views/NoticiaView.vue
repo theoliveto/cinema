@@ -17,9 +17,11 @@
 
         <div class="row">
             <div class="col-8">
-                <corpo-noticia-component 
-
-                />
+                <corpo-noticia-component />
+            </div>
+            <div class="col-1"></div>
+            <div class="col-3">
+                <aside-component />
             </div>
         </div>
     </div>
@@ -32,6 +34,7 @@
     import DestaquesComponent from '../components/DestaquesComponent.vue'
     import CabecalhoNoticiaComponent from '../components/noticias/CabecalhoNoticiaComponent.vue'
     import CorpoNoticiaComponent from '../components/noticias/CorpoNoticiaComponent.vue'
+    import AsideComponent from '../components/AsideComponent.vue'
 
     export default {
         name: 'NoticiaView',
@@ -40,13 +43,15 @@
             RodapeComponent,
             DestaquesComponent,
             CabecalhoNoticiaComponent,
-            CorpoNoticiaComponent
+            CorpoNoticiaComponent,
+            AsideComponent
         },
         mounted() {
             document.title = this.tituloPagina
         },
         data() {
             return {
+                noticia: {},
                 tituloPagina: 'CINEMA! | Filmes',
                 imagem: require('../assets/img/noticias/img-noticia.png'),
                 titulo: 'Os melhores filmes do ano 2000',
@@ -56,7 +61,7 @@
                 link: 'https://www.instagram.com/_oliveto/',
                 data: new Date().toLocaleString(),
             }
-        }
+        },
     }
 </script>
 

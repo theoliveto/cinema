@@ -1,6 +1,6 @@
 <template>
   <cabecalho-component />
-  <div class="container mt-5">
+  <div class="container-xxl mt-5">
     <div class="row">
       <div class="col-6">
         <noticia-horizontal-component 
@@ -12,6 +12,14 @@
           nomeAutor="Oliveto Vinicius"
           :linkNoticia="linkAcesso"
         />
+        <noticia-component 
+          :imagemNoticia="imagemNoticiaVertical" 
+          tituloNoticia="Os melhores filmes do ano 2000"
+          subTituloNoticia="Confira a lista completa"
+          assuntoNoticia="Em 2000, Gladiador e O Tigre e o Dragão lideraram, são uns dos melhores filmes de 2000."
+          :dataNoticia="dataNoticia"
+          :linkNoticia="linkAcesso"
+        />
       </div>
       <div class="col-3">
         <noticia-vertical-component 
@@ -21,21 +29,16 @@
           :dataNoticia="dataNoticia"
           :linkNoticia="linkAcesso"
         />
-      </div>
-      <div class="col-3">
-        
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-6">
-        <noticia-component 
+        <noticia-vertical-component 
           :imagemNoticia="imagemNoticiaVertical" 
           tituloNoticia="Os melhores filmes do ano 2000"
-          subTituloNoticia="Confira a lista completa"
           assuntoNoticia="Em 2000, Gladiador e O Tigre e o Dragão lideraram, são uns dos melhores filmes de 2000."
           :dataNoticia="dataNoticia"
           :linkNoticia="linkAcesso"
         />
+      </div>
+      <div class="col-3">
+        <aside-component />
       </div>
     </div>
   </div>
@@ -50,6 +53,7 @@
   import NoticiaVerticalComponent from '../components/noticias/NoticiaVerticalComponent.vue'
   import NoticiaComponent from '../components/noticias/NoticiaComponent.vue'
   import CookiesComponent from '../components/CookiesComponent.vue'
+  import AsideComponent from '../components/AsideComponent.vue'
 
   export default {
     name: 'HomeView',
@@ -59,7 +63,8 @@
       NoticiaHorizontalComponent,
       NoticiaVerticalComponent,
       NoticiaComponent,
-      CookiesComponent
+      CookiesComponent,
+      AsideComponent
     },
     data() {
       return {
