@@ -2,7 +2,7 @@
     <div v-if="!cookiesAccepted" class="cookie-banner bg-dark text-white">
       <p>Este site usa cookies para melhorar a sua experiência. Aceitar cookies?</p>
       <button @click="acceptCookies" class="btn btn-primary">Aceitar</button>
-      <button @click="declineCookies" class="btn btn-outline-dark">Recusar</button>
+      <button @click="declineCookies" class="btn btn-outline-secondary">Recusar</button>
     </div>
   </template>
   
@@ -40,7 +40,6 @@
         background-color: #f4f4f4;
         padding: 10px;
         text-align: center;
-        border-top: 1px solid #ddd;
     }
 
     .cookie-banner button {
