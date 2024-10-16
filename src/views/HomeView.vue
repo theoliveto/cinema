@@ -1,6 +1,7 @@
 <template>
   <cabecalho-component />
   <destaques-component />
+  <carousel-component />
   <div class="container-xxl mt-5 mb-4">
     <div class="row">
       <div class="col-3">
@@ -54,7 +55,6 @@
     </div>
   </div>
 
-  <carousel-component />
   <div class="container-fluid divisor"></div>
 
   <div class="container-xxl mt-5">
@@ -129,7 +129,7 @@
   import AsideComponent from '../components/AsideComponent.vue'
   import DestaquesComponent from '../components/DestaquesComponent.vue' 
   import CarouselComponent from '../components/CarouselComponent.vue'
-  import CriticasComponent from '../components/CriticasComponent.vue'
+  import CriticasComponent from '../components/criticas/CriticasComponent.vue'
 
   export default {
     name: 'HomeView',

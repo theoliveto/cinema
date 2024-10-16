@@ -36,7 +36,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 <script>
     export default {
+        name: '',
+        data() {
+            return {
 
+            }
+        },
     }
 </script>
 
